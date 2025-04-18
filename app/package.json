@@ -1,0 +1,14 @@
+{
+    "name": "app",
+    "version": "1.0.0",
+    "description": "FullCycle Rocks!",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "mysql2": "^2.3.3",
+      "sequelize": "^6.12.0"
+    }
+  }
