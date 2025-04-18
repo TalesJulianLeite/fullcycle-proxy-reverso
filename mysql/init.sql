@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS fullcycle;
+USE fullcycle;
+
+CREATE TABLE IF NOT EXISTS people (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Cria usuário de desenvolvimento (opcional)
+CREATE USER IF NOT EXISTS 'dev'@'%' IDENTIFIED BY 'dev';
+GRANT ALL PRIVILEGES ON fullcycle.* TO 'dev'@'%';
+FLUSH PRIVILEGES;
