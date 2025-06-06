@@ -47,8 +47,6 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=fullcycle
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=root
     volumes:
       - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
       - mysql_data:/var/lib/mysql
